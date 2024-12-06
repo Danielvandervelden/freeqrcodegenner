@@ -76,7 +76,7 @@
             }
         </script>
     </head>
-    <body class="bg-blue-50 min-h-screen flex flex-col">
+    <body class="bg-blue-50 min-h-screen flex flex-col bg-slate-900 flex flex-col h-screen">
         <noscript
             ><iframe
                 src="https://www.googletagmanager.com/ns.html?id=GTM-PC2P55ZX"
@@ -84,11 +84,22 @@
                 width="0"
                 style="display: none; visibility: hidden"></iframe
         ></noscript>
-        <main class="container mx-auto px-2 py-2 flex-grow md:py-8 md:px-4">
-            <header class="flex justify-center">
-                <img src="/logo.png" alt="free qr code genner logo" />
-                <h1>Free qr code genner</h1>
-            </header>
+        <header class="pt-10 lg:pt-20">
+            <div class="flex justify-center items-center gap-4">
+                <h1 class="text-4xl">Free qr code genner</h1>
+                <img class="w-14 h-auto" src="/logo.png" alt="free qr code genner logo" />
+            </div>
+            <p class="max-w-3xl m-auto text-center mt-4">
+                Literally just a simple QR code generator, with the option to add an
+                image, and resize it. You can only cover so much of a QR code before it
+                stops working, so there is a maximum size.
+            </p>
+        </header>
+        <main class="container mx-auto px-2 py-2 md:py-8 md:px-4">
+            <div class="flex flex-col m-auto max-w-md">
+                <label for="url">Enter a url</label>
+                <input class="text-slate-900 px-4 py-2 rounded-md" type="text" id="url" />
+            </div>
         </main>
     </body>
 </html>
