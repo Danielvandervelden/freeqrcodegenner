@@ -27,8 +27,10 @@ export default async function generateQrCode() {
         return;
     }
 
+    const qrCodeWidth = 330;
+
     const qrCodeOptions = {
-        width: 330,
+        width: qrCodeWidth,
         margin: 1,
     };
 
@@ -41,13 +43,13 @@ export default async function generateQrCode() {
 
     switch (imageSizeValue) {
         case "small":
-            imageDimension = 50;
+            imageDimension = qrCodeWidth * 0.1;
             break;
         case "medium":
-            imageDimension = 75;
+            imageDimension = qrCodeWidth * 0.15;
             break;
         case "large":
-            imageDimension = 100;
+            imageDimension = qrCodeWidth * 0.22;
             break;
         default:
             imageDimension = 0;

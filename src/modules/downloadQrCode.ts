@@ -48,7 +48,7 @@ export default async function downloadQrCode() {
             imageDimension = finalSize * 0.15;
             break;
         case "large":
-            imageDimension = finalSize * 0.2;
+            imageDimension = finalSize * 0.22;
             break;
         default:
             imageDimension = 0;
